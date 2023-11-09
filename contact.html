@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fansite.css">
+    <title>Fan Site Zilean, Gardien du Temps - League of Legends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&family=EB+Garamond&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html"><img class="logo_riot" src="images/Riot_Games_Logo.png" alt="Logo Riot Games"></a>
+            <div class="menu_site">
+                <a href="index.html">Zilean</a>
+                <a href="actualite.html">Actualité</a>
+                <a href="competences.html">Compétences</a>
+                <a href="histoire.html">Histoire</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu_reseau">
+                <a class="icone_reseau" href="https://www.youtube.com/LeagueofLegendsFR"><img
+                        src="images/icone/icons8-youtube-25.png" alt="icone youtube"></a>
+                <a class="icone_reseau" href="https://twitter.com/LoL_France"><img
+                        src="images/icone/icons8-twitter-25.png" alt="icone twitter"></a>
+                <a class="icone_reseau" href="https://www.facebook.com/LeagueOfLegendsFROfficial"><img
+                        src="images/icone/icons8-facebook-25.png" alt="icone facebook"></a>
+                <a class="icone_reseau" href="https://www.instagram.com/leagueoflegendsfr"><img
+                        src="images/icone/icons8-instagram-25.png" alt="icone instagram"></a>
+                <a class="icone_reseau" href="https://discord.com/invite/leagueoflegendsfr"><img
+                        src="images/icone/icons8-discorde-25.png" alt="icone discord"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section_histoire_presentation">
+            <form class="form_contact" method="post" action="#">
+                <label for="civilite"> Vous êtes </label>
+                <select id="civilite" class="text_form" name="civilite">
+                    <option value="blank"> </option>
+                    <option value="un_homme">un homme</option>
+                    <option value="une_femme">une femme</option>
+                    <option value="non_precise">non précisé</option>
+                </select>
+                <div>
+                    <div>
+                        <label class="nom_form" for="name">Nom</label>
+                        <input class="text_form mini_text" id="name" name="name" type="text" required="">
+                    </div>
+                    <div>
+                        <label class="nom_form" for="first_name">Prénom</label>
+                        <input class="text_form mini_text" id="first_name" name="first_name" type="text" required="">
+                    </div>
+
+                </div>
+                <label for="email">Email</label>
+                <input class="text_form" id="email" name="email" type="email" required="">
+                <label for="telephone">Téléphone</label>
+                <input class="text_form" id="telephone" name="telephone" type="tel" required="">
+                <label for="adresse_postale">Adresse Postale</label>
+                <input class="text_form" name="adresse_postale" id="adresse_postale" type="text" required="">
+                <label for="sujet">Sujet</label>
+                <input class="text_form" id="sujet" name="sujet" type="text" required="">
+                <label for="message">Votre Message</label>
+                <textarea class="text_form zone_texte" id="message" name="message" cols="30" rows="10" required=""></textarea>
+
+                <div class="bloc_confidentialite">
+                    <label for="politique_confidentialite">Politique de
+                        confidentialité</label>
+                    <input class="text_form checkbox" id="politique_confidentialite" name="politique_confidentialite" type="checkbox" required="">
+                </div>
+                <button class="button_form" type="submit">Envoyer</button>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <nav class="menu">
+            <a href="index.html"><img class="logo_riot" src="images/Riot_Games_Logo.png" alt="Logo Riot Games"></a>
+            <div class="menu_site">
+                <a href="index.html">Zilean</a>
+                <a href="actualite.html">Actualité</a>
+                <a href="competences.html">Compétences</a>
+                <a href="histoire.html">Histoire</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu_reseau">
+                <a class="icone_reseau" href="https://www.youtube.com/LeagueofLegendsFR"><img src="images/icone/icons8-youtube-25.png" alt="icone youtube"></a>
+                <a class="icone_reseau" href="https://twitter.com/LoL_France"><img src="images/icone/icons8-twitter-25.png" alt="icone twitter"></a>
+                <a class="icone_reseau" href="https://www.facebook.com/LeagueOfLegendsFROfficial"><img src="images/icone/icons8-facebook-25.png" alt="icone facebook"></a>
+                <a class="icone_reseau" href="https://www.instagram.com/leagueoflegendsfr"><img src="images/icone/icons8-instagram-25.png" alt="icone instagram"></a>
+                <a class="icone_reseau" href="https://discord.com/invite/leagueoflegendsfr"><img src="images/icone/icons8-discorde-25.png" alt="icone discord"></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

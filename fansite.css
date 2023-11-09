@@ -1,0 +1,510 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(images/bg_lol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'EB Garamond', serif;
+
+}
+
+header,
+footer {
+    background-color: #111111;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.main_presentation {
+
+    background-image: url(images/Zilean_0.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+a,
+a:visited {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.main_presentation .section_presentation {
+    padding-top: 37em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu_site {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu_reseau {
+    display: flex;
+    justify-content: right;
+}
+
+.icone_reseau {
+    margin: 0 10px;
+}
+
+.logo_riot {
+    height: 30px;
+}
+
+.titre_principal {
+    font-size: 65px;
+}
+
+.bloc_principal {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2px;
+    border: solid 2px rgba(51, 58, 66, 0.7);
+    margin-top: 40px;
+
+}
+
+.bloc_info {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.info_champ {
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info_champ span {
+    font-size: 10px;
+}
+
+.titre_margin {
+    margin: 10px 0 2px;
+
+}
+
+.text_info {
+    margin: 2em 0;
+    padding: 10px 30px;
+    width: 50%;
+    letter-spacing: 0.08em;
+    border-left: 2px solid rgba(51, 58, 66, 0.8);
+}
+
+.logo_info {
+    height: 30px;
+}
+
+.group_bloc_difficulty {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bloc_difficulty {
+    height: 10px;
+    display: inline-block;
+    width: 30.6667%;
+    padding-right: 4%;
+    opacity: 1;
+    background-color: rgb(8, 215, 247);
+    background-clip: content-box;
+    transform: skewX(-40deg);
+}
+
+
+.main_actualite {
+    background-color: rgba(118, 118, 118, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main_actualite h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.main_actualite h2 {
+    font-size: 25px;
+}
+
+.unfull {
+    opacity: 0.2;
+}
+
+dl {
+    padding-left: 2em;
+}
+
+dt {
+    color: orange;
+    margin: 20px 0;
+}
+
+li li {
+    margin-left: 30px;
+    list-style: none;
+}
+
+li li::before {
+    content: "\2022";
+    color: gray;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* ------------  Compétences ------------*/
+
+.section_competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+video {
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 1) 0px 15px 12px;
+
+}
+
+.bloc_competences {
+    display: flex;
+}
+
+.bloc_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bloc_menu div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+
+}
+
+.bloc_sort {
+    display: none;
+}
+
+.bloc_sort:target {
+    display: block;
+    align-items: center;
+}
+
+
+
+.bloc_sort_text * {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.passive_a_z_e_r {
+    font-size: 9px;
+    color: darkgrey;
+    display: block;
+}
+
+.titre_competences {
+    font-size: 50px;
+    font-weight: bold;
+    width: 400px;
+    font-style: italic;
+}
+
+.nom_sort {
+    font-size: 18px;
+}
+
+.description_sort {
+    font-size: 14px;
+    width: 400px;
+    letter-spacing: 0.08px;
+}
+
+.icone_competences {
+    width: 80%;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.icone_competences:hover {
+    width: 100%;
+}
+
+.clic_icone {
+    margin-bottom: 2em;
+}
+
+/* ------------------  Histoire -------------------*/
+
+.section_histoire_presentation {
+    display: flex;
+    margin: 5em 0 0;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.section_histoire_presentation h3 {
+    font-size: 10px;
+    color: #9C7D42;
+}
+
+.container_histoire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 54%;
+    text-align: center;
+}
+
+
+.bloc_citation {
+    background-color: #111318;
+    border: 1px solid #31271e;
+    border: #31271e solid 1px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.citation {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.bloc_histoire {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #31271e;
+    height: 74%;
+    background-color: #111318;
+}
+
+
+.bloc_histoire p {
+    margin: auto;
+    width: 350px;
+}
+
+.lettre_a {
+    font-size: xx-large;
+    height: max-content;
+    padding: 15px 0;
+    margin: 15px;
+    border-bottom: 1px solid #9C7D42;
+}
+
+.read_history {
+    width: 35%;
+    border: #31271e 2px solid;
+    background-color: rgba(17, 19, 24, 0.2);
+    margin: auto;
+    padding: 23px 48px;
+    text-transform: uppercase;
+}
+
+.aside_info {
+    height: 500px;
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.bloc_support,
+.bloc_emblem {
+    background-color: #111318;
+    border: 1px solid #31271e;
+}
+
+.container_histoire_fin {
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    height: 500px;
+    background-color: #111318;
+    border: 1px solid #31271e;
+}
+
+.container_histoire_fin div {
+    margin: auto;
+    text-align: center;
+}
+
+
+.champ_lie {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #31271e;
+}
+
+.img_champ_lies {
+    height: 100px;
+    border-radius: 90px;
+}
+
+.bloc_support {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #31271e;
+}
+
+.bloc_support_img {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #31271e;
+}
+
+.icone_support {
+    width: 75%;
+}
+
+.bloc_support_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_emblem {
+    height: 74%;
+    background-image: url('images/DetailGridEmblemBackground.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bloc_emblem img {
+    width: 75%;
+}
+
+.section_histoire {
+    padding-top: 10em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.section_histoire p {
+    letter-spacing: 0.05px;
+    line-height: 1.58;
+    margin: 15px 0;
+}
+
+/* ---------------  Contact  -------------------*/
+
+.form_contact {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_contact div {
+    display: flex;
+    align-items: center
+}
+
+.form_contact div div {
+    width: 50%;
+
+}
+
+.text_form {
+    height: 50px;
+    background-color: #111318;
+    border: #9C7D42 solid 1px;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.bloc_confidentialite {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc_confidentialite label {
+    cursor: pointer;
+}
+
+input {
+    min-height: 30px;
+}
+
+.mini_text {
+    width: 80%;
+}
+
+.button_form {
+    background-color: #111318;
+    color: #9C7D42;
+    padding: 30px 45px;
+    border: #9C7D42 1px solid;
+    cursor: pointer;
+}
+
+.nom_form {
+    margin-right: 10px;
+}
